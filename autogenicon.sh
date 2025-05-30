@@ -4,7 +4,7 @@ set -e
 generate_icon() {
     local image="$1"        # arg[1] -> image file location
     local icon_name="$2"    # arg[2] -> output icon name
-    local iconset_dir="${icon_name}.iconset"
+    local iconset_dir=".${icon_name}.iconset"
 
 
     if [ ! -f "$image" ]; then
